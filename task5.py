@@ -1,3 +1,4 @@
+# Assignment 1: Design Your Own Class!
 class Books():
     def __init__(self, title):
         self.total_books = 12
@@ -35,3 +36,21 @@ library = Library("LOTS 3")
 print(library.title)
 library.add_books(5)
 library.count_books()
+
+
+# Activity 2: Polymorphism Challenge!
+
+class Transport:
+    def move():
+        print("movement")
+
+class Car(Transport):
+    def move():
+        print("driving..")
+
+class Plane(Transport):
+    def move():
+        print("flying..")
+
+Car.move()
+Plane.move()
